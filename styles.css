@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #abeef7; /* Более насыщенный мятный */
+
+}
+
+header {
+    background-color: #41b0ff; /* Темно-синий */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+#about {
+    background-color: #e0f7fa; /* Светло-мятный */
+}
+
+#rooms {
+    background-color: #b2ebf2; /* Более насыщенный мятный */
+}
+
+.room {
+    border: 1px solid #0077cc; /* Темно-синий */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,
+        td {
+            padding: 20px;
+        }
+        th {
+            text-align: left;
+        }
+.container {
+            width: 80%; /* Ширина контейнера */
+            max-width: 800px; /* Максимальная ширина */
+            margin: 20px auto; /* Центрирование контейнера */
+            padding: 20px; /* Внутренние отступы */
+            background-color: #cbf9fd; /* Цвет фона контейнера */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень */
+            border-radius: 8px; /* Скругление углов */
+        }
+        .m {
+    color:rgb(29, 28, 28);
+    border-radius: 15px; /* Сглаженные углы */
+    padding: 20px;
+    text-align: center; /* Центрирование текста */
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: appear 2s forwards;
+    margin-bottom: 20px; /* Отступ снизу */
+    
+}
+.w {
+    color:rgb(255, 255, 255);
+    border-radius: 15px; /* Сглаженные углы */
+    padding: 20px;
+    text-align: center; /* Центрирование текста */
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: appear 2s forwards;
+    margin-bottom: 20px; /* Отступ снизу */
+}
+@keyframes appear {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        img {
+            width: 300px; /* Ширина изображения */
+            border-radius: 15px; /* Сглаженные углы для изображения */
+            opacity: 0;
+            animation: imageFadeIn 2s forwards;
+            display: block; /* Отображение изображения как блочного элемента */
+            margin: 20px auto; /* Центрирование изображения */
+        }
+
+        @keyframes imageFadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
